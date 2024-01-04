@@ -34,4 +34,28 @@ Program:-
 
 
 program:-
-    
+   // Swich case brand name
+   
+   //basic salary
+   
+   //calculate pf
+   
+   //age sallry marriage
+   
+   //fatorial
+   
+   // mathematical table
+   
+   //print 100 to 1
+   
+   //sum of digit 
+   
+   //ARmstrong Number
+   
+   //print 100 prime number
+   
+   //pathern printing
+
+
+============================================
+
