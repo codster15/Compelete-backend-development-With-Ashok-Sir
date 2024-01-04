@@ -155,6 +155,10 @@ public class CharacterOrDigit {
 
 .               4 Day (4 jan 2024)
 
+
+
+
+
 program 1
 
 write a brand name based on brand name sologan needs to be printed along with brand name 
@@ -549,4 +553,10 @@ public class Starpart2 {
     }
 
 }
+
+
 -----------------------------------------------------------------
+
+
+
+ .                    5 Day (5 jan 2024)
