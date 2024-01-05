@@ -560,3 +560,279 @@ public class Starpart2 {
 
 
  .                    5 Day (5 jan 2024)
+
+  ARRAY
+
+    
+    print array elements
+
+        public class printArrayElements {
+    public static void main(String[] args) {
+
+
+        int [] arr = {2,5,1,3,7,8};
+
+        for(int i=0; i< arr.length; i++){
+
+            System.out.println(arr[i]);
+        }
+
+    }
+}
+-------------------------------------------
+
+ print sum of array
+
+ public class SUmOFArray {
+    public static void main(String[] args) {
+        int [] arr = {2,5,1,3,7,8};
+
+        int sumOfArray = 0;
+
+
+
+        for(int i=0; i< arr.length; i++){
+
+            sumOfArray += arr[i];
+
+        }
+        System.out.println(sumOfArray);
+    }
+}
+
+
+-------------------------------------
+
+ reverse the given array
+
+    public class ReverseArray {
+    public static void main(String[] args) {
+
+        int temp = 0;
+
+        int [] arr = {2,5,1,3,7,8};
+        for (int test : arr){
+            System.out.print(test + " ");
+        }
+
+
+
+        for(int i=0; i< arr.length /2; i++){
+
+            temp = arr[i];
+            arr[i] = arr[arr.length -1 -i ];
+            arr[arr.length -1 -i] = temp;
+
+
+            temp = 0 ;
+        }
+        System.out.println();
+
+
+
+        for (int value : arr){
+            System.out.print(value + " ");
+        }
+
+
+
+    }
+}
+
+
+-------------------------------------
+
+print min and max value from array
+
+public class minAndMax {
+    public static void main(String[] args) {
+
+        int min = 0;
+        int [] arr = {2,5,1,3,7,8,0};
+        min  = arr[0];
+
+        int max = 0 ;
+        max = arr[0];
+
+        for(int i=1; i< arr.length; i++){
+
+
+            if(arr[i] < min){
+                min = arr[i];
+
+            }
+
+            if(arr[i] > max){
+                max = arr[i];
+
+            }
+
+
+        }
+            System.out.println( "mai - "+ min);
+            System.out.println( "max - " + max);
+
+    }
+}
+
+--------------------------------------------
+
+
+
+
+
+// .                                                                                  S T R I N G    M E T H O R D
+
+lec 24
+
+
+//   note - Static method is call by class name 
+//          NonStatic method will be called by Object name 
+
+
+valueOf() ------> to convert int into Array
+                    valueOf() = is a Satic method so it will called by Class name; 
+
+
+
+startWith() -----> to check given String is starting with particular charcter or not (a)
+            String str = "ashok"
+            str.startWith("a"); =====> true
+
+
+
+endsWith() ----> to check given String is ends with particular charcter or not (k)
+                       String str = "ashok"
+                       str.endsWith(k);========> true
+
+
+
+trim()=====> it is use to remove starting and ending spaces of String
+                    String str = "  hello  ";
+                    str.trim();=====>"hello"
+
+
+intern()==> it is used to access the object form scp(String constent pool);
+
+toString()==> it  used to convert object into string format 
+
+toCharArray() ===> to convert string into array
+        String s1 = "java";
+        char arr[] = s1.toCharArray();
+        output==> [j,a,v,a]
+
+
+
+
+    
+
+
+
+
+
+===================================================================================================================
+
+
+.                                               STRING BUFFER
+LEC 24
+
+string buffer-- it is mutable means (we can modify the content)
+             -- it thread-safe means one person can access at a time
+
+
+        StringBuffer  sb = new StringBuffer("hello");
+        sb.append("hi")
+        output==> hello hi ;  // its mutable because its mutable
+
+
+        ------------------------------------------
+
+
+        String s1 = "Ashok";
+        s1.concat("it")
+        output ==> Ashok ; // its not concating reason is its immutable
+
+
+        ------------------------------------------
+
+
+
+        =========================================================================================================
+
+        .                                   String Program
+
+    
+    combine to two String
+
+        public class CombineString {
+    public static void main(String[] args) {
+
+        String s1 = "Deepak";
+        String s2 = " Singh";
+        String combine = s1 + s2; //first way to combine string
+        String combine1 = s1.concat(s2);  //second way to combine string
+        System.out.println(combine);
+
+    }
+}
+
+
+
+----------------------------------------------
+
+
+ reverse a string
+
+    public class ReverseAString {
+    public static void main(String[] args) {
+
+        StringBuilder str = new StringBuilder("Deepak");
+            str.reverse();
+            System.out.println(str);
+
+
+    }
+}
+
+
+------------------------------------------------
+
+
+
+program --->    check given string is palindrome or not 
+
+
+!important program !
+
+
+import java.util.Scanner;
+public class CheckPalindromeString {
+    public static void main(String[] args) {
+
+        Scanner read = new Scanner(System.in);
+
+        System.out.println("Enter here ");
+         String store = read.nextLine();
+
+        StringBuilder sb = new StringBuilder(store);
+
+
+
+        StringBuilder reverseStr = new StringBuilder(store) ;
+            reverseStr.reverse();  //storing reversed String in --> reverseStr variable
+
+        System.out.println( "form sb  - " +sb);
+        System.out.println(  "for reverseStr  -  " + reverseStr);
+
+        if(sb.toString().equals(reverseStr.toString())){   // here we are checking two strings  are equal or not
+            System.out.println("this is palindrome String - " + store);
+
+        }else {
+            System.out.println("Not Palindrome - "  + store);
+        }
+
+    }
+}
+
+
+-------------------------------------------------------

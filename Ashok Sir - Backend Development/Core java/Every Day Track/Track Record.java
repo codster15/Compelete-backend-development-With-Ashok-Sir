@@ -59,3 +59,27 @@ program:-
 
 ============================================
 
+
+.               Day 5 (5 dec2024)
+
+
+        // PRint Array Elements
+
+        // print sum of array
+        
+        // reverse the given array
+        
+        // print min and max value from array
+
+ concept-->   S T R I N G    M E T H O R D
+
+ concept-->    STRING BUFFER 
+
+
+           //  combine to two String   
+
+           // reverse a string
+
+           //check given string is palindrome or not 
+
+           
