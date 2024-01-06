@@ -675,12 +675,12 @@ public class minAndMax {
     }
 }
 
---------------------------------------------
 
 
 
 
 
+===========================================================================================================
 
 
 
@@ -745,6 +745,9 @@ toCharArray() ===> to convert string into array
                 (string to string) --> it will  compare
                 (string to StringBuilder) --> not compare because String and StringBuilder is not same.
 
+.replaceAll() ==> it will replace the charater or sequence in the string
+                -- if--> different different character form the string use braces --->  a.replaceAll("[abdgf]" , "");
+                
 
 
 
@@ -865,6 +868,8 @@ public class CheckPalindromeString {
 
 
 .                                 6 dec 2024                                                    !  motivation --> 27 lec time -42:00
+
+.lec - 27 done
 
 reverse string
 
@@ -1042,3 +1047,85 @@ public class AnagramSecondWay {
     }
 }
 
+
+
+---------------------------------------------------------------------
+
+
+.                               First Way to swap
+
+
+ program --> swap string without third variable first way
+
+
+
+
+public class SwapWithoutThirdVaribale {
+    public static void main(String[] args) {
+
+
+        StringBuilder a1 = new StringBuilder("java");
+        StringBuilder b1 = new StringBuilder("program");
+
+        System.out.println( "String a - " + a1);
+        System.out.println( "String b - " + b1);
+
+        a1.replace(0 , a1.length() ,"program");
+        b1.replace(0 , b1.length() , "java");
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println( "String a - " + a1);
+        System.out.println( "String b - " + b1);
+
+
+
+    }
+
+
+
+}
+
+
+---------------------------------------------------------------
+
+
+.                               Second Way to swap
+
+
+ program --> swap string without third variable first way
+
+
+
+
+ 
+
+
+
+public class SecondWayTOSwap {
+    public static void main(String[] args) {
+
+
+        String a = "java";
+        String b = "program";
+        System.out.println( "String a - "+ a);
+        System.out.println(  "String b - "+ b);
+
+        a = a + b;
+
+
+
+        b =  a.substring(0 , a.length() - b.length());
+        a = a.substring(4);
+
+        System.out.println();
+
+        System.out.println( "String a - "+ a);
+        System.out.println(  "String b - "+ b);
+
+
+    }
+}
+
+----------------------------------------------------

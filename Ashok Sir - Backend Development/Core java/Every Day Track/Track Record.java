@@ -87,6 +87,8 @@ program:-
 
 .               Day 6 (6 dec 2024)
 
+lec - 27 done
+
         //  print reverse String
 
        // reverse string 
@@ -94,3 +96,10 @@ program:-
        //Anagram program first way
 
       // Anagram program Second way
+
+      //swap string without third variable first way
+
+       //swap string without third variable Second way
+
+=======================================================
+
