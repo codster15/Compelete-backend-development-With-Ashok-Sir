@@ -82,4 +82,15 @@ program:-
 
            //check given string is palindrome or not 
 
-           
+==============================================
+
+
+.               Day 6 (6 dec 2024)
+
+        //  print reverse String
+
+       // reverse string 
+
+       //Anagram program first way
+
+      // Anagram program Second way

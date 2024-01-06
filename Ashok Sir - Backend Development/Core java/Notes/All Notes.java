@@ -681,7 +681,26 @@ public class minAndMax {
 
 
 
-// .                                                                                  S T R I N G    M E T H O R D
+
+
+
+
+
+// .                                     S T R I N G    M E T H O R D
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 lec 24
 
@@ -714,12 +733,17 @@ trim()=====> it is use to remove starting and ending spaces of String
 
 intern()==> it is used to access the object form scp(String constent pool);
 
-toString()==> it  used to convert object into string format 
+toString()==> it  used to convert any object into string format  
 
 toCharArray() ===> to convert string into array
         String s1 = "java";
         char arr[] = s1.toCharArray();
         output==> [j,a,v,a]
+
+
+.equals() ==> to compare the content of two strings only 
+                (string to string) --> it will  compare
+                (string to StringBuilder) --> not compare because String and StringBuilder is not same.
 
 
 
@@ -757,7 +781,7 @@ string buffer-- it is mutable means (we can modify the content)
 
 
 
-        ======================================================================================================
+======================================================================================================
 
         .                                   String Program
 
@@ -835,4 +859,186 @@ public class CheckPalindromeString {
 }
 
 
+
+
+==============================================================================
+
+
+.                                 6 dec 2024                                                    !  motivation --> 27 lec time -42:00
+
+reverse string
+
+        
+
+public class stringPrograms {
+    public static void main(String[] args) {
+
+        String s = "java";
+        int count  = 0;
+
+        for(int i=0; i < s.length(); i++){
+
+            char show = s.charAt(i);
+
+
+            if(show == 'a'){
+                count++;
+            }
+
+        }
+        System.out.println();
+        System.out.println("total occurence of a is = " + count);
+    }
+}
+
+
+--------------------------------------------------------------------------
+
+
+
+program --- reverse the String
+
+
+
+
+import java.util.*;
+public class Palindrom {
+    public static void main(String[] args) {
+
+        Scanner read = new Scanner(System.in);
+
+        System.out.println("Enter Character");
+
+        String getData = read.next();
+
+
+
+        String str = getData;
+        String rev = "";
+
+        
+
+        for (int i = str.length() -1 ; i >= 0 ; i--  ){
+               rev += str.charAt(i);
+        }
+
+        System.out.println(str);
+        System.out.println(rev);
+
+
+        if(str.equals(rev) ){
+            System.out.println("Palindrome ");
+        }else {
+            System.out.println("Not Palindrome ");
+        }
+
+    }
+}
+
+
+----------------------------------------------------
+
+
+.                               Anagram program First way
+
+progra -- wrt java program given two string are anagrams are not 
+
+ex- keep & peek ==> Anagram
+
+
+
+import java.util.*;
+
+public class AnagarmPrograms {
+    public static void main(String[] args) {
+
+        Scanner read = new Scanner(System.in);
+
+        System.out.println("Enter first String");
+        String first = read.next();
+
+        System.out.println("Enter Second String");
+        String second = read.next();
+        int count = 0;
+      
+        for (int i = 0; i < first.length(); i++) {
+
+
+            for (int j = 0; j < second.length(); j++) {
+
+                if (first.charAt(i) == second.charAt(j)) {
+
+
+                    count = 0;
+                    break;
+
+                } else {
+                    count++;
+                }
+
+            }
+
+            if (count != 0) {
+                System.out.println(count);
+                System.out.println(" Not Anagram");
+                return;
+            }
+
+
+        }
+
+        if (first.length() == second.length()) {
+            System.out.println("Anagram");
+        } else {
+            System.out.println("Not Anagram");
+        }
+
+
+    }
+}
+
 -------------------------------------------------------
+
+.                               Anagram program Second way
+
+progra -- wrt java program given two string are anagrams are not 
+
+
+
+
+import java.util.*;
+
+public class AnagramSecondWay {
+    public static void main(String[] args) {
+
+        Scanner read = new Scanner(System.in);
+
+        System.out.println("Enter first String");
+        String s1 = read.next();
+
+        System.out.println("Enter Second String");
+        String s2 = read.next();
+
+        if(s1.length() != s2.length()){
+            System.out.println("Not Anagram");
+            return;
+        }
+
+        char c1[] = s1.toCharArray();
+        char c2[] = s2.toCharArray();
+
+        Arrays.sort(c1);
+        Arrays.sort(c2);
+
+        boolean flag = Arrays.equals(c1,c2);
+
+        if(flag){
+            System.out.println("Anagram");
+        }else {
+            System.out.println("Not Anagram");
+        }
+
+
+    }
+}
+
