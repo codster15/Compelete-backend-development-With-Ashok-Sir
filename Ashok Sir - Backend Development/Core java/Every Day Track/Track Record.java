@@ -85,7 +85,7 @@ program:-
 ==============================================
 
 
-.               Day 6 (6 dec 2024)
+.                       Day 6 (6 dec 2024)
 
 lec - 27 done
 
@@ -103,3 +103,14 @@ lec - 27 done
 
 =======================================================
 
+
+.                      Day 7 (7 dec 2024)
+
+lec - 28 done
+
+.                                                                       28 lec time 1:34:00 motivation 
+          
+                // reverse the each word of string
+
+                //Count no of words in String
+lec 28 done 

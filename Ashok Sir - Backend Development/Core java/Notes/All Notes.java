@@ -1128,4 +1128,59 @@ public class SecondWayTOSwap {
     }
 }
 
-----------------------------------------------------
+--------------------------------------------------------------
+
+
+. reverse the vowel 
+
+
+
+public class RemoveVowel {
+    public static void main(String[] args) {
+
+        String a = "Hello, i love my india";
+
+        a = a.replaceAll("[aeiouAEIOU]" , "");    // important line 
+        System.out.println(a);
+
+
+
+
+    }
+}
+
+=======================================================================================================
+
+
+
+.                      Day 7 (7 dec 2024)
+
+lec - 28 done
+
+
+reverse the each word of string
+
+
+public class ReverseEachWord {
+    public static void main(String[] args) {
+        String s = "hello my friend ";
+        String arr[] = s.split(" ");
+        String x = "";
+           for(int i = 0 ; i < arr.length ; i ++){
+         x = arr[i];
+            StringBuilder sb = new StringBuilder(x);
+            sb.reverse();
+               System.out.print(sb + " ");
+
+        }
+
+
+    }
+}
+
+--------------------------------------------------
+
+
+count no of words in string
+
+
