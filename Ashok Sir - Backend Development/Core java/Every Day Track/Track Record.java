@@ -106,6 +106,11 @@ lec - 27 done
 
 .                      Day 7 (7 dec 2024)
 
+
+
+
+
+
 lec - 28 done
 
 .                                                                       28 lec time 1:34:00 motivation 
@@ -114,3 +119,24 @@ lec - 28 done
 
                 //Count no of words in String
 lec 28 done 
+lec 29 done (ids installations)
+lec 30 done (ids installations)
+lec 31 done (oops basics)
+
+
+
+
+
+            oops basics
+                    Encapsulation
+                    Abstraction
+                    Polimorphism
+                    Inheritence
+            
+            CLASS
+
+            OBJECTS
+
+
+    just understand the basics of loop  principles
+=========================================================================             
