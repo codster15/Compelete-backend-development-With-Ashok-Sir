@@ -124,6 +124,7 @@ lec 30 done (ids installations)
 lec 31 done (oops basics)
 
 
+.// ----------------------------------------------------------------         O O P S     C O N C E P T           -------------------------------------------
 
 
 
@@ -140,3 +141,17 @@ lec 31 done (oops basics)
 
     just understand the basics of loop  principles
 =========================================================================             
+
+
+
+
+.                      Day 8 (8 dec 2024)
+
+
+
+
+
+
+lec - 32 done
+
+
