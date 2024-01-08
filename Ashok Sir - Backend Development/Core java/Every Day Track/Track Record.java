@@ -149,9 +149,26 @@ lec 31 done (oops basics)
 
 
 
+// OOPS CONCEPT
 
+        oops concept
+        
+            -hashcode
 
+        variable
+            instance variable
+            static variable
+            local variable
 
 lec - 32 done
 
 
+=======================================================================
+
+
+
+.                      Day 9 (8 dec 2024)
+
+
+
+// OOPS CONCEPT
