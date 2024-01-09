@@ -172,3 +172,45 @@ lec - 32 done
 
 
 // OOPS CONCEPT
+
+                    Methods()-- //   Introduction
+
+
+
+
+===================================================================
+
+
+
+
+
+.                      Day 10 (10 dec 2024)
+
+
+ ->   core java
+
+
+->   lecture-- 34 end
+
+
+
+--->  Program --find the max in array .
+
+
+--- >  program  - to concate  string 
+
+
+-- >  program to checjk person age for vote eligible
+
+
+         ***important program
+
+
+--- >   progarm  -- write  a method to reverse the arra
+
+
+
+--->   wrt a method to convert string to upper case
+
+
+=================================================================================
