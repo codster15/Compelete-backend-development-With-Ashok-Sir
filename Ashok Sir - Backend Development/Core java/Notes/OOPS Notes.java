@@ -968,3 +968,130 @@ solution
 
 
 ---------------------------------------------------------------------------------
+
+
+
+.                      Day 13 (13 dec 2024)
+
+
+ ->   core java 
+ lec - 38
+
+ topics
+ =======
+
+        constructor
+            types of constructor
+            constructor overloading
+            this keyword
+
+---------------------------------------------------
+
+lec -39 
+
+topics
+=========== 
+
+        access modifier
+            public
+            private
+            protected
+            default
+
+
+============================================================================================
+
+
+
+.                                 -->    day 14   (14 - 1 - 2024)
+
+
+
+.                                                 C O R E   J A V A
+
+
+
+lec -40
+
+
+
+topics
+=========
+
+getter setter program
+
+(this is Encapsulation concept)
+
+
+
+PROGRAM -- 1
+
+getter setter program
+(this is Encapsulation concept)
+
+
+
+\
+
+
+
+//  first classs instancve variables are private  so other classs cant access them directly. we need take the help of getter and setter to make use of the private variable in other classes. 
+public class getterSetter {
+
+
+    private int accNum;
+    private String name ;
+
+
+    public void setAccNum(int accNum){   // using Setter method so that other class can make use of private variable .But they cant"t change the value of private variable .onlu use it 
+        this.accNum = accNum;
+    }
+
+    public int getAccNum(){   // using getter  method so that other class can make use of private variable .simply call ther get method and use the variable in the classs
+        return this.accNum;
+    }
+
+//    -----------------------------
+
+    public void setName (String name){
+        this.name = name;
+
+    }
+
+    public String getName(){
+
+        return name;
+    }
+
+
+
+}
+
+
+// ----------------------------
+
+
+//class 2
+
+public class testForSetter {
+
+
+    public static void main(String[] args) {
+        getterSetter obj = new getterSetter();  // creating object of gettersetter class to call the method 
+
+
+        obj.setAccNum(34343);  //setting the value by calling the setter method along with passing the parameter  
+        obj.setName("Deepak"); //setting the value by calling the setter method along with passing the parameter  
+
+                    int StudentId = obj.getAccNum(); // fetching the value of private varible with the help of getter method  and storing into StudentId variable
+                String Studentname = obj.getName();  // fetching the value of private varible with the help of getter method and storing into Studentname variable
+
+
+                System.out.println(name);
+                System.out.println(Id);
+
+
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
