@@ -1095,3 +1095,69 @@ public class testForSetter {
 }
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+.                                 -->    day 15   (15 - 1 - 2024)
+
+
+
+.                                                 C O R E   J A V A
+
+
+
+lec -41
+
+
+        Inheritence
+            
+        types of inheritence
+        ====================
+                - single inheritence
+                - multilevel inheritence
+                - hierachical inheritence
+                - multiple inheritence ( not supporting in java  ! )
+
+
+
+                
+        
+
+      program---> inheritence
+      =========================
+
+
+
+
+      public class user {
+    int id ;
+    String name ;
+
+}
+
+----------------------------------------------
+
+
+public class Student extends user {
+    int rank;
+
+    void Show (Student s){   // recieving the object 
+        System.out.println(s.id);   // printing the data 
+        System.out.println(s.name);
+        System.out.println(s.rank);
+    }
+
+    public static void main(String[] args) {
+        Student s = new Student(); //creating child class object
+        s.id =12343; // assiging the value to child variable  of parent class
+        s.name = "Ashok";
+        s.rank = 784683;
+        s.Show(s);  // classing the child class method and pass the object as parameter 
+
+    }
+}
+---------------------------------------------------------------------
+
+
