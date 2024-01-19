@@ -1158,6 +1158,159 @@ public class Student extends user {
 
     }
 }
----------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 
 
+.                                 -->    day 16   (16 - 1 - 2024)
+
+
+
+.                                                 C O R E   J A V A
+
+
+
+lec -42
+
+
+        
+         Inheritence
+
+         polymorphism 
+                static - compile time polymorphism
+
+------------------------------------------------------------------------------------------------------------
+
+   .                                 -->    day 17   (17 - 1 - 2024)
+
+
+
+.                                                 C O R E   J A V A
+
+
+
+lec -43
+
+
+                Polimorphism
+                        overloading
+                        overriding
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+   .                                 -->    day 18   (18 - 1 - 2024)
+
+
+
+.                                                 C O R E   J A V A
+
+
+
+lec -44
+
+
+
+    (DOUBT SESSION)
+
+
+    some programs i solved for practice 
+
+    
+
+ ----------------------------------------------------------------------------------------------------------
+
+    .                                 -->    day 19   (19 - 1 - 2024)
+
+
+
+.                                                 C O R E   J A V A
+
+
+
+lec -45
+
+    
+        IS-A  relation
+        HAS-A relation
+
+        final keyword
+
+        Abstraction 
+        Interfaces   
+
+
+
+program on Interfaces
+===========================
+
+
+interface
+
+public interface  bank {
+
+    public abstract void balancetranfer();
+
+    public abstract void  checkBalance();
+
+}
+-----------------------------------------
+
+
+
+
+
+hdfc class
+
+public class HDFC implements bank {
+
+
+    @Override
+    public void balancetranfer() {
+        System.out.println("hdfc bank balance tranfer");
+    }
+
+    @Override
+    public void checkBalance() {
+
+        System.out.println("hdfc check balance");
+    }
+
+    public static void main(String[] args) {
+        HDFC hd = new HDFC();
+        hd.balancetranfer();
+        hd.checkBalance();
+    }
+}
+------------------------------------------------
+
+
+
+axis class
+
+public class AXIS implements bank {
+
+    @Override
+    public void balancetranfer() {
+
+        System.out.println("axis balance transfer");
+    }
+
+    @Override
+    public void checkBalance() {
+
+        System.out.println("axis check balance");
+
+    }
+
+    public static void main(String[] args) {
+        AXIS a = new AXIS();
+        a.balancetranfer();
+        a.checkBalance();
+    }
+}
+
+
+
+
+----------------------------------------------------------------------------------------------------------
