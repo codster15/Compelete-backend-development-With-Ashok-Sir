@@ -241,3 +241,203 @@ public class demo {
 
 
 
+    
+    .                                 -->    day 26  (26 - 1 - 2024)
+
+
+
+.                                                 C O R E   J A V A
+
+
+
+lec -53
+
+
+
+program
+=========
+
+---------------------------------------------    without static Import  ----------------------------
+package com.ibm.adhar;
+
+public class test {
+
+    public static void speak(){
+        System.out.println("Hi i am deepak");
+    }
+    public static void m1(){
+        System.out.println("m1() method called");
+    }
+    public static void m2(){
+        System.out.println("m2() method called");
+    }
+
+
+}
+-------------------------------------------------------
+
+
+package com.demo;
+import com.ibm.adhar.test;
+public class user {
+    public static void main(String[] args) {
+        test.speak();
+        test.m1();
+        test.m2();
+
+    }
+}
+
+--------------------------------------------
+
+
+
+
+
+//                                                                         with using  static Import
+
+package com.ibm.adhar;
+
+public class test {
+
+    public static void speak(){
+        System.out.println("Hi i am deepak");
+    }
+    public static void m1(){
+        System.out.println("m1() method called");
+    }
+    public static void m2(){
+        System.out.println("m2() method called");
+    }
+
+
+}
+-----------------------------------------------------
+
+package com.demo;
+import static com.ibm.adhar.test.*;  // static keywod used
+public class user {
+    public static void main(String[] args) {
+        speak();       // method called withoud class name 
+        
+        m1();          // method called withoud class name 
+
+        m2();         // method called withoud class name 
+
+    }
+}
+=============================================================================================================
+
+
+
+
+
+
+
+.                                                                       Variable arguments --> beautiful concept - 1.5v 
+
+
+when to go with variable arguments ?
+Ans ==> //when we don't know how many parameter to take for the a method then we can use var-args
+
+
+note -  only 3 dots allowed
+     -  variable arguments should be the last arguments of the method 
+     -  method should contain only one  variable arguments perameter
+
+
+valid
+// syntax -- public int add (int... x){
+
+// }
+Invalid
+// syntax -- public int add (int... x ,string b){
+
+// }
+
+valid
+// syntax -- public int add (string b , int... x ){
+
+// }
+
+public int add (int b , String... x )        // valid
+public int add (string b , int... x )        //valid
+public int add (string b , boolean... x )    //valid
+public int add (string... x , int j )    //Invalid because var-args Should be last
+ public int add (string b , int... z )    //valid
+
+
+ 
+
+
+
+-----------------------------------------------------------------------------------------------
+
+
+     package com.demo;
+
+public class user {
+
+    public void calculator(int... a){
+
+
+        int sum = 0;
+        for (int x : a){
+            sum += x;
+
+        }
+        System.out.println(sum);
+
+    }
+
+    public static void main(String[] args) {
+
+        user u = new user();
+        u.calculator(10,20);
+        u.calculator(10,20,30);
+        u.calculator(10,20,50,60);
+
+//        int a[] = {2,4,6,1,7};
+//
+//
+//        for(int x : a){
+//            System.out.println(x);
+//
+//        }
+
+
+
+
+    }
+}
+-----------------------------------------------------------------------------------------
+
+
+
+.                           wrapper class --> concept
+
+
+
+program
+=========
+
+
+
+
+package com.demo;
+
+public class wrapperclass {
+    public static void main(String[] args) {
+        int a = 10;
+
+        Integer i = new Integer(a); // boxing // here we are converting primitive data type into object formate this process is called as wrapper class
+        System.out.println(i);
+
+        String c = "120";
+        Integer q = new Integer(c); // boxing // here we are converting primitive data type into object formate this process is called as wrapper class
+        System.out.println(q);
+    }
+
+
+}
+--------------------------------------------------------------------------------------
