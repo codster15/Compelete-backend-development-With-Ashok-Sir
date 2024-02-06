@@ -949,7 +949,7 @@ solution
 
             return arr;
     }
-
+//----------------------------------------------------------------
        public static void main(String[] args) {
 
         personclass pc = new personclass();
